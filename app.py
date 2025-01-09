@@ -10,7 +10,6 @@ def get_stock_api():
     return StockAPI()
 
 client = get_stock_api()
-
 # Search stocks function
 @st.cache_data(ttl=3600)
 def search_company(company):
